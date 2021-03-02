@@ -17,15 +17,19 @@ body {
 }
 
 li {
-    display: inline-block;
-    color:plum;
+    display: inline-flex;
     text-decoration: underline;
     font-size: 20px;
     margin-right: 30px;
     margin-top: 20px;
-    font-weight: bold;}
+    font-weight: bold;
+}
+
+a {
+    color:plum;
+}
 
 header {
-    background-color: black;
+    background-color:black;
     height: 80px;
 }
