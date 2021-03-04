@@ -78,6 +78,10 @@ nav a:hover {
 
 }
 
+footer {
+   background-color: var(--dark);
+}
+
 footer ul {
     display: flex;
     flex-wrap: wrap;
@@ -96,14 +100,18 @@ footer ul li a {
     padding: 5px 15px;
     border-bottom: 2px solid var(--dark);
     color: var(--slate);
-    box-shadow: 10px 4px 0px 21px var(--gray);    
+    box-shadow: 10px 4px 0px 21px var(--gray);
+    color: var(--orchid);    
 }
 
 aside {
     flex: 1;
-    background-color: var(--mood);
-    padding: 80px;
-    text-align: center;
+    padding: -8px 0 20px 5px;
+    text-align: left;
+}
+
+aside p {
+    font-size: 250%
 }
 
 .container {
@@ -143,8 +151,6 @@ container-content p {
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
 
 .card {
     border-style: solid;
