@@ -1,4 +1,9 @@
 /* Universal styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --orchid:#d9b3ff;
     --cool:#ccffe6;
@@ -23,3 +28,35 @@ body {
     line-height: 1.5;
     color: var(--orchid);
     background-color: var(--slate);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex: wrap-around;
+    padding: 5%;
+    color: var(--mood);
+    background-image: url("/assets/images/images/background.png");
+}
+
+h1 {
+    font-size: 200%;
+    margin-top: 0;
+    box-shadow: -5px -1px 12px 32px var(--slate);
+    font-family: fantasy;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+header nav ul li {
+    margin: 0 3px;
+}
