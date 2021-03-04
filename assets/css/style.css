@@ -1,8 +1,4 @@
 /* Universal styling */
-* {
-    margin: 0;
-    padding: 0;
-}
 
 :root {
     --orchid:#d9b3ff;
@@ -11,6 +7,7 @@
     --dark:#000000;
     --fun:#ff66cc;
     --mood:#9900cc;
+    --gray:#595959;
 }
 
 .text-right {
@@ -37,14 +34,14 @@ header {
     justify-content: space-between;
     flex: wrap-around;
     padding: 5%;
-    color: var(--mood);
-    background-image: url("/assets/images/images/background.png");
+    color: var(--slate);
+    background-image: url("../images/background.png");
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 250%;
     margin-top: 0;
-    box-shadow: -5px -1px 12px 32px var(--slate);
+    box-shadow: -5px -1px 12px 32px var(--gray);
     font-family: fantasy;
 }
 
@@ -59,4 +56,101 @@ header nav ul {
 
 header nav ul li {
     margin: 0 3px;
+}
+
+header nav ul li a {
+    font-size: 23px;
+    padding: 5px 15px;
+    border-bottom: 2px solid var(--dark);
+    color: var(--slate);
+    box-shadow: 10px 4px 0px 21px var(--gray);
+}
+
+nav a {
+    color: var(--gray);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: var(--mood);
+
+}
+
+.container {
+    width: 90%margin 0 auto;
+    padding: 40px 0;
+    display: flex;
+}
+
+.container-title {
+    width: 19%;
+    font-size: 46px;
+    font-weight: bold;
+    border-right: 3px;
+    text-align: right;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.container-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+container-content p {
+    width: 70%;
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.vertical {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--orchid);
+    outline: 1px dashed var(--gray);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.project .label {
+    position: relative;
+    margin: -4rem 0 1.5 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--mood);
+    color: var(--orchid);
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.project:hover,
+.project:hover .label {
+    box-shadow: inset 0px 0px 8px var(--orchid), 0 0 15pv var(--orchid);
 }
