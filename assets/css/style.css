@@ -2,7 +2,7 @@
 
 :root {
     --orchid:#d9b3ff;
-    --cool:#ccffe6;
+    --cool:#4dffff;
     --slate:#d9d9d9;
     --dark:#000000;
     --fun:#ff66cc;
@@ -24,7 +24,7 @@ body {
     font-size: 1.75rem;
     line-height: 1.5;
     color: var(--orchid);
-    background-color: var(--slate);
+    background-color: var(--gray);
     display: flex;
     flex-direction: column;
 }
@@ -36,13 +36,16 @@ header {
     padding: 5%;
     color: var(--slate);
     background-image: url("../images/background.png");
+    border: var(--orchid);
 }
 
 h1 {
     font-size: 250%;
     margin-top: 0;
     box-shadow: -5px -1px 12px 32px var(--gray);
+    color: var(--gray);
     font-family: fantasy;
+    border-bottom: 2px solid var(--cool);
 }
 
 header nav ul {
@@ -61,10 +64,11 @@ header nav ul li {
 header nav ul li a {
     font-size: 23px;
     padding: 5px 15px;
-    border-bottom: 2px solid var(--dark);
-    color: var(--slate);
-    box-shadow: 10px 4px 0px 21px var(--gray);
+    border-bottom: 2px solid var(--cool);
+    color: var(--gray);
+    box-shadow: 0px 0px 1px 18px var(--gray);
 }
+
 
 nav a {
     color: var(--gray);
@@ -79,7 +83,7 @@ nav a:hover {
 }
 
 footer {
-   background-color: var(--dark);
+   color: var(--orchid);
 }
 
 footer ul {
@@ -102,6 +106,10 @@ footer ul li a {
     color: var(--slate);
     box-shadow: 10px 4px 0px 21px var(--gray);
     color: var(--orchid);    
+}
+
+footer h1 {
+    color: var(--orchid);
 }
 
 aside {
@@ -193,4 +201,12 @@ container-content p {
     padding: 103px 22px 20px 397px;
     text-align: right;
     
+}
+
+@media screen and (max-width: 768x) {
+    main,
+    nav,
+    .card {
+        flex-direction: column;
+    }
 }
