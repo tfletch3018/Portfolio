@@ -64,10 +64,10 @@ header nav ul li {
 
 header nav ul li a {
     font-size: 23px;
-    padding: 5px 15px;
+    padding: 30px 19px 45px 27px;
     border-bottom: 2px solid var(--cool);
     color: var(--gray);
-    box-shadow: 0px 0px 1px 18px var(--gray);
+    box-shadow: -6px -4px -2px 18px var(--gray);
 }
 
 
@@ -102,7 +102,7 @@ footer ul li {
 
 footer ul li a {
     font-size: 20px;
-    padding: 5px 15px;
+    padding: 5px 15px 0px 0px;
     border-bottom: 2px solid var(--dark);
     color: var(--slate);
     box-shadow: 10px 4px 0px 21px var(--gray);
@@ -210,8 +210,7 @@ container-content p {
     nav,
     ul,
     li,
-    a,
-    .card {
+    a  {
         flex-direction: column;
     }
 }
@@ -222,8 +221,7 @@ container-content p {
     nav,
     ul,
     li,
-    a,
-    .card {
+    a  {
         flex-direction: column;
     }
 }
@@ -234,8 +232,7 @@ container-content p {
     nav,
     ul,
     li,
-    a,
-    .card {
+    a  {
         flex-direction: column;
     }
 }
