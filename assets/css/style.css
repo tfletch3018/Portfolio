@@ -204,9 +204,37 @@ container-content p {
     
 }
 
-@media screen and (max-width: 768x) {
+@media screen and (max-width: 992x) {
+    header,
     main,
     nav,
+    ul,
+    li,
+    a,
+    .card {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768x) {
+    header,
+    main,
+    nav,
+    ul,
+    li,
+    a,
+    .card {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576x) {
+    header,
+    main,
+    nav,
+    ul,
+    li,
+    a,
     .card {
         flex-direction: column;
     }
