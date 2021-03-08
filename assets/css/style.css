@@ -79,7 +79,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--mood);
+    color: var(--cool);
 
 }
 
@@ -103,10 +103,8 @@ footer ul li {
 footer ul li a {
     font-size: 20px;
     padding: 5px 15px 0px 0px;
-    border-bottom: 2px solid var(--dark);
-    color: var(--slate);
-    box-shadow: 10px 4px 0px 21px var(--gray);
-    color: var(--orchid);    
+    border-bottom: 2px solid var(--cool);
+    color: var(--orchid); 
 }
 
 footer h1 {
@@ -120,7 +118,8 @@ aside {
 }
 
 aside p {
-    font-size: 250%
+    font-size: 250%;
+    border-bottom: 2px solid var(--cool);
 }
 
 .container {
@@ -131,12 +130,10 @@ aside p {
 
 .container-title {
     width: 19%;
-    font-size: 46px;
-    font-weight: bold;
-    border-right: 3px;
-    text-align: right;
-    padding-right: 10px;
-    margin-right: 10px;
+    font-size: 250%;
+    padding: 89px 0px 0px 62px;
+    text-decoration: underline;
+    text-decoration-color: var(--cool);
 }
 
 .container-content {
@@ -151,6 +148,10 @@ container-content p {
     margin-left: 10px;
     font-size: 18px;
     line-height: 1.5;
+}
+
+.about-picture {
+    position: relative;
 }
 
 .work {
